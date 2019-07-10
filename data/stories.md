@@ -2,7 +2,7 @@
 * greet
   - utter_greet
 
-# ask path
+## ask path
 * ask_question
   - answer_resp
 
