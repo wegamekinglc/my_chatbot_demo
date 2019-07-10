@@ -1,19 +1,32 @@
 intents:
-  - greet
-  - goodbye
-  - ask_question
-
-actions:
-- utter_greet
-- utter_goodbye
-- answer_resp
-
+- ask_question
+- goodbye
+- greet
+- not_understand
+slots:
+  exact_answer:
+    type: unfeaturized
+  match_status:
+    type: categorical
+    values:
+    - exact
+    - partial
+    - not
 templates:
   utter_greet:
-  - text: "你好啊～有什么可以帮你的？"
-
+  - text: 你好啊～有什么可以帮你的？
+  - text: Hihi~有什么可以帮到你？
   utter_goodbye:
-  - text: "再见！"
-
+  - text: 再见！
+  - text: 88~
+  - text: 不想说再见~
   utter_default:
-  - text: "我听不懂你在说什么"
+  - text: 我听不懂你在说什么...你有什么想问我的吗？
+  - text: 最近我又疏于学习了，您的话我听不懂，要不您换个问法？
+actions:
+- exact_resp
+- not_known
+- search_question
+- utter_default
+- utter_goodbye
+- utter_greet

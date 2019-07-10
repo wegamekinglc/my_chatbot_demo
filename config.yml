@@ -10,7 +10,7 @@ pipeline:
     ip: '127.0.0.1'
     port: 5555
     port_out: 5556
-    show_server_config: True
+    # show_server_config: True
     timeout: 10000
     check_version: False
   - name: "rasa_nlu_gao.classifiers.embedding_bert_intent_classifier.EmbeddingBertIntentClassifier"
@@ -31,10 +31,9 @@ policies:
       "intra_op_parallelism_threads": 0,
       "gpu_options": {"allow_growth": True}
     }
-
   - name: FallbackPolicy
     fallback_action_name: 'action_default_fallback'
-    nlu_threshold: 0.5
-    core_threshold: 0.3
+    nlu_threshold: 0.3
+    core_threshold: 0.5
   - name: MemoizationPolicy
     max_history: 3                                                                                                                                                                              
