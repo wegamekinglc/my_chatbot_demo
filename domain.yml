@@ -1,21 +1,19 @@
 intents:
   - greet
   - goodbye
-  - default
-  - unknown_intent
+  - ask_question
 
 actions:
 - utter_greet
 - utter_goodbye
-- utter_default
-
+- answer_resp
 
 templates:
   utter_greet:
   - text: "你好啊～有什么可以帮你的？"
 
   utter_goodbye:
-  - text: "再见？期待您的再次光临～"
-  
+  - text: "再见！"
+
   utter_default:
-  - text: "不好意思，没听懂，能换个说法吗？"
+  - text: "我听不懂你在说什么"

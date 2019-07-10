@@ -1,12 +1,10 @@
-## happy path
+## greet path
 * greet
   - utter_greet
-* goodbye
-  - utter_goodbye
 
-## unkown path
-* unknown_intent
-  - action_default_fallback
+# ask path
+* ask_question
+  - answer_resp
 
 ## goodbye path
 * goodbye
