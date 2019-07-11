@@ -14,6 +14,7 @@
   - search_question
   - slot{"match_status": "not"}
   - not_known
+  - slot{"match_status": null}
 
 ## goodbye path
 * goodbye
