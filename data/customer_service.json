@@ -1,0 +1,189 @@
+{
+    "rasa_nlu_data": {
+        "common_examples": [
+            {
+                "text": "你好",
+                "intent": "greet",
+                "entities": []
+            },
+            {
+                "text": "您好~",
+                "intent": "greet",
+                "entities": []
+            },
+            {
+                "text": "hi!",
+                "intent": "greet",
+                "entities": []
+            },
+            {
+                "text": "早上好！",
+                "intent": "greet",
+                "entities": []
+            },
+            {
+                "text": "下午好！",
+                "intent": "greet",
+                "entities": []
+            },
+            {
+                "text": "晚上好！",
+                "intent": "greet",
+                "entities": []
+            },
+            {
+                "text": "我怎么报修",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "我报修了，怎么没消息的",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "旁边就是你们的维修站，我能直接送过去吗",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "我在深圳，干嘛要我寄到上海修",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "我的机器寄过去了，怎么还没修好，都没有人联系我",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "你们修好的机器发什么快递寄回？",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "寄过去的运费谁来承担",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "碎屏、压纸轴损坏、壳料损坏等",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "屏幕触摸失灵、触摸无反应",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "提醒提示：打印头过热",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "打印机打印小票部分模糊",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "打印机卡纸、切刀卡住、纸仓打不开或卡住",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "连接一体机打印机",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "卡在开机画面",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "摄像头扫码扫不出或者扫的慢",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "设备提示“未检测到相机”",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "虚拟按键失灵或无效",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "物理按键失灵或无效",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "提示“电池过热”",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "电量显示异常",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "NFC设备无法读取",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "wifi无法连接",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "设备称重不准、称重数据波动",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "小闪扫码无数据输入",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "钱箱无法弹出",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "桌面无APP图标",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "设备没有声音",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "维修配件的价格",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "设备可以root吗",
+                "intent": "general",
+                "entities": []
+            },
+            {
+                "text": "我店/家旁边就是你们的维修站，我可以直接送过去吗",
+                "intent": "general",
+                "entities": []
+            }
+        ],
+        "regex_features": [],
+        "lookup_tables": [],
+        "entity_synonyms": []
+    }
+}
