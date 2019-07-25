@@ -56,29 +56,3 @@ class ActionSearchQuestion(Action):
         else:
             return [SlotSet("match_status", "not")]
 
-class ActionExactResp(Action):
-
-    def name(self) -> Text:
-        return "exact_resp"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        dispatcher.utter_message(tracker.get_slot('exact_answer'))
-        return [SlotSet("match_status", None), SlotSet("exact_answer", None)]
-
-
-class ActionNotKnown(Action):
-
-    def name(self) -> Text:
-        return "not_known"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        dispatcher.utter_message("这个问题我不知道。。。")
-
-        return [SlotSet("match_status", None), SlotSet("exact_answer", None)]
-
