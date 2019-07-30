@@ -3,3 +3,5 @@ models
 *.log
 *.pyc
 *.db
+*.xlsx
+.ipynb_checkpoints

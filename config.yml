@@ -1,10 +1,11 @@
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
 language: zh
-pipeline: 
-  - name: "JiebaTokenizer"
-  - name: "rasa_nlu_gao.extractors.jieba_pseg_extractor.JiebaPsegExtractor"
-    part_of_speech: ["nr", "ns", "nt"]
-  - name: "CountVectorsFeaturizer"
-    token_pattern: '(?u)\b\w+\b'
-  - name: "EmbeddingIntentClassifier"                                                                                                                                                                  
+pipeline:
+- name: "MitieNLP"
+  model: "models/total_word_feature_extractor_zh.dat"
+- name: "JiebaTokenizer"
+  dictionary_path: "jieba_userdict"
+- name: "MitieEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "RegexFeaturizer"
+- name: "MitieFeaturizer"
+- name: "SklearnIntentClassifier"

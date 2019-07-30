@@ -1,0 +1,6 @@
+T1mini
+P1
+M1
+K1
+D2
+D1S
